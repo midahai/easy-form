@@ -1,0 +1,31 @@
+.wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.list {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    border: 1em solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%,
+        #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 / 6em 6em;
+    .item {
+        display: inline-block;
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        padding: 5px;
+        cursor: pointer;
+        &:hover, &.selected {
+            background: #59a;
+        }
+    }
+}
